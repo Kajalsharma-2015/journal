@@ -33,7 +33,7 @@ It allows users to securely create, manage, update, and delete personal journal 
 ---
 
 ## Screenshots
-![Create User API](screenshots/create-user.png)  
+![Create User API](screenshorts/Screenshot 2025-12-26 002353.pdf)  
 ![Journal API](screenshots/journal-api.png)
 
 ---
