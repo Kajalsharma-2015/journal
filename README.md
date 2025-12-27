@@ -35,19 +35,19 @@ It allows users to securely create, manage, update, and delete personal journal 
 ## Screenshots
 
 ### User Registration
-![Create User](screenshots/create-user.png)
+![Create User](screenshorts/create-user.png)
 
 ### Add Journal Entry
-![Add Journal](screenshots/Addjournal.png)
+![Add Journal](screenshorts/Addjournal.png)
 
 ### View All Journal Entries
-![Retrieve Entries](screenshots/retrive-all-entry.png)
+![Retrieve Entries](screenshorts/retrive-all-entry.png)
 
 ### Update Journal Entry
-![Update Entry](screenshots/update-entry.png)
+![Update Entry](screenshorts/update-entry.png)
 
 ### Delete Journal Entry
-![Delete Entry](screenshots/delete-entry.png)
+![Delete Entry](screenshorts/delete-entry.png)
 
 
 
