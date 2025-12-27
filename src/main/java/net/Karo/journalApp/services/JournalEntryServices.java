@@ -48,11 +48,35 @@ public class JournalEntryServices {
     public Optional<JournalEntry> findId(ObjectId id){
         return journalEntryRepository.findById(id);
     }
-    public void deleteById(ObjectId id, String userName){
-         User user=userServices.findByUserName(userName);
-         user.getJournalEntries().removeIf(x ->x.getId().equals(id));
-         userServices.saveEntry(user);
-        journalEntryRepository.deleteById(id);
-    }
+
+   public void deleteByuser(ObjectId id, String userName){
+       User user=userServices.findByUserName(userName);
+       user.getJournalEntries().removeIf(x ->x.getId().equals(id));
+       userServices.saveEntry(user);
+
+       journalEntryRepository.deleteById(id);
+
+   }
+   /*public void deleteByuser(ObjectId id, String userName) {
+
+       User user = userServices.findByUserName(userName);
+
+       if (user == null) {
+           throw new RuntimeException("User not found");
+       }
+
+       boolean removed = user.getJournalEntries()
+               .removeIf(journal -> journal.getId().equals(id));
+
+       if (!removed) {
+           throw new RuntimeException("Journal entry not found for this user");
+       }
+
+       userServices.saveEntry(user);
+       journalEntryRepository.deleteById(id);
+
+       System.out.println("Journal entry deleted successfully");
+   }*/
+
 
 }

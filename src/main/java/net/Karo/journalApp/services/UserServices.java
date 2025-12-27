@@ -36,6 +36,7 @@ public class UserServices {
 
     public  void createNewUser(User user){
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRoles(List.of("USER"));
         userRepository.save(user);
 
     }
